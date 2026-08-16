@@ -1,5 +1,5 @@
 {
-  "id": "9ec40758-5e95-4475-859f-d9d21cf775a5",
+  "id": "59aa6e2f-71f6-4204-85e9-a548f06a3afb",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -50,9 +50,9 @@
           "name": "logs_timestamp_id_idx",
           "columns": [
             {
-              "expression": "timestamp",
-              "isExpression": false,
+              "expression": "\"timestamp\" desc",
               "asc": true,
+              "isExpression": true,
               "nulls": "last"
             },
             {
@@ -77,9 +77,9 @@
               "nulls": "last"
             },
             {
-              "expression": "timestamp",
-              "isExpression": false,
+              "expression": "\"timestamp\" desc",
               "asc": true,
+              "isExpression": true,
               "nulls": "last"
             }
           ],
@@ -98,9 +98,9 @@
               "nulls": "last"
             },
             {
-              "expression": "timestamp",
-              "isExpression": false,
+              "expression": "\"timestamp\" desc",
               "asc": true,
+              "isExpression": true,
               "nulls": "last"
             }
           ],
