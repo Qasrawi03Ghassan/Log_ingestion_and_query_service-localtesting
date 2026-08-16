@@ -12,4 +12,4 @@ CREATE INDEX "logs_service_timestamp_idx" ON "logs" USING btree ("service","time
 CREATE INDEX "logs_level_timestamp_idx" ON "logs" USING btree ("level","timestamp" desc);
 
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
-CREATE INDX IF NOT EXISTS "logs_messageQ_trgm_idx" ON "logs" USING GIN ("message" gin_trgm_ops);
+CREATE INDEX IF NOT EXISTS "logs_messageQ_trgm_idx" ON "logs" USING GIN ("message" gin_trgm_ops);
